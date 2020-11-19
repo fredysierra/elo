@@ -80,9 +80,8 @@ See [License](LICENSE.md)
 
 ## Questions?
 
-Twitter: [@fysus](https://twitter.com/fysus)
-Email: [fredysierra@gmail.com](mailto:fredysierra@gmail.com?subject=[Github Elo])
-Linkedin: https://www.linkedin.com/in/fredysierra/
+* Twitter: [@fysus](https://twitter.com/fysus)
+* Linkedin: https://www.linkedin.com/in/fredysierra/
 
 ## Copyright
 
