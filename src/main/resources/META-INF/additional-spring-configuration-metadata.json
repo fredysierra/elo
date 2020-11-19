@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "matches.filename",
+      "type": "java.lang.String",
+      "description": "Description for matches.filename."
+    },
+    {
+      "name": "players.filename",
+      "type": "java.lang.String",
+      "description": "Description for players.filename."
+    }
+  ] }
