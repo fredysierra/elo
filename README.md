@@ -1,4 +1,4 @@
-#ELO Ranking Application
+# ELO Ranking Application
 
 Ranking Players using [Elo](https://en.wikipedia.org/wiki/Elo_rating_system) algorithm.
 
