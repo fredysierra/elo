@@ -17,6 +17,7 @@ import java.util.stream.Collectors;
 public class MatchAnalyzer {
 
     private static final int INITIAL_RANK = 1000;
+    private static final int K_FACTOR = 30;
 
     private final List<Match> matches;
 
@@ -48,7 +49,7 @@ public class MatchAnalyzer {
             var rankPlayer1 = rankingByPlayer.get(match.getWinnerPlayerId());
             var rankPlayer2 = rankingByPlayer.get(match.getLoserPlayerId());
 
-            var newRankings = eloRankingCalculator.getNewEloRanking(rankPlayer1, rankPlayer2, 30);
+            var newRankings = eloRankingCalculator.getNewEloRanking(rankPlayer1, rankPlayer2, K_FACTOR);
 
             rankingByPlayer.replace(match.getWinnerPlayerId(), newRankings.getRankingPlayer1());
             rankingByPlayer.replace(match.getLoserPlayerId(), newRankings.getRankingPlayer2());

@@ -7,10 +7,10 @@ Ranking Players using [Elo](https://en.wikipedia.org/wiki/Elo_rating_system) alg
 
 Given two files:
 
-1. Players file: Each line has an ID number and a name for that player. Name and location fo the file is defined in  
+1. Players file: Each line has an ID number and a name for that player. File name and location is defined in  
 [application.properties](src/main/resources/application.properties) with the property `players.filename`. Default value is [./players.txt](./players.txt)
 
-2. Matches file: Each line contains the ID of the two players of a match and the first one is the winner of that match. Name and location fo the file is defined in  
+2. Matches file: Each line contains the ID of the two players of a match and the first one is the winner of that match. File name and location is defined in  
 [application.properties](src/main/resources/application.properties) with the property `matches.filename` Default value is [./matches.txt](./matches.txt)
 
 ## How to run the application
@@ -44,17 +44,17 @@ Where `SHOW_DETAILS` and `13` are application options.
 
 ## Application options
 
-* `LIST_PLAYERS`: Shows a list of players and their ranking, number of wins and losses. By default, the list is sorted by `RANKING`. However other sort options could be `ID`, `NAME`, `RANKING`, `WINS`, `LOSSES`. it is possible as well to change the sorting directions using the options `ASC`, `DES`. By default, the list is sorted by using `ASC`.
+* `LIST_PLAYERS`: Shows a list of players and their ranking, number of wins and losses. By default, the list is sorted by `RANKING`. However other sort options could be `ID`, `NAME`, `RANKING`, `WINS`, `LOSSES`. it is possible as well to change the sorting direction using the options `ASC`, `DES`. By default, the list is sorted by using `ASC`.
 
 Example:
 `java -jar target/elo-0.0.1-SNAPSHOT.jar  LIST_PLAYERS WINS DES`
 
-* `SHOW_DETAILS`: Show the player details like ranking, number of wins, losses. Additionally, it shows whom the player won or lost and the number of times. For this option is mandatory a second parameter with the `playerId`.
+* `SHOW_DETAILS`: Shows the player details like ranking, number of wins, losses. Additionally, it shows whom the player won or lost and the number of times. For this option is mandatory a second parameter with the `playerId`.
 
 Example:
 `java -jar target/elo-0.0.1-SNAPSHOT.jar  SHOW_DETAILS 13`
 
-* `GENERATE_MATCH`: Shows a list with Player ID pairs with suggested matches. Matches are arranged based on player ranking. Matches with similar player rankings will be fun and challenging for the players. A match is generated per player in the list. As the player list might not be even in terms of the number of players, a player might need to play twice.
+* `GENERATE_MATCH`: Shows a list of Player ID pairs with suggested matches. Matches are arranged based on player ranking. Matches with similar player rankings will be fun and challenging for the players. A match is generated per player in the list. As the player list might not be even in terms of the number of players, a player might need to play twice.
 
 ### Runtime configuration options.
 

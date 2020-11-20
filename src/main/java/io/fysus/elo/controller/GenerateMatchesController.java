@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 @AllArgsConstructor
 @Slf4j
-public class GenerateMatches implements Controller {
+public class GenerateMatchesController implements Controller {
 
     private MatchMakerService matchMakerService;
     private OutputFormatter<List<Match>> formatter;

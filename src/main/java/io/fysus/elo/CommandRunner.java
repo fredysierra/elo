@@ -77,7 +77,7 @@ public class CommandRunner implements ApplicationRunner {
     enum MainMenuOption {
         LIST_PLAYERS("listPlayersController"),
         SHOW_DETAILS("showPlayerDetailsController"),
-        GENERATE_MATCH("generateMatches");
+        GENERATE_MATCH("generateMatchesController");
 
         private final String controllerName;
 

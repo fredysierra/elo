@@ -51,7 +51,7 @@ public class MatchMakerService {
     }
 
     private List<Match> generateMatchesBasedOnRanking(Map<String, Integer> rankingByPlayer) {
-        Map<String, Integer> sortedByValueRanking = sortByValue(rankingByPlayer);
+        var sortedByValueRanking = sortByValue(rankingByPlayer);
 
         List<Match> newMatches = new ArrayList<>();
 

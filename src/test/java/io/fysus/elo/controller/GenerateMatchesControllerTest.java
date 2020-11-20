@@ -18,10 +18,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 
 @ExtendWith(MockitoExtension.class)
-class GenerateMatchesTest {
+class GenerateMatchesControllerTest {
 
     @InjectMocks
-    private GenerateMatches generateMatches;
+    private GenerateMatchesController generateMatches;
 
     @Mock
     private OutputFormatter<List<Match>> formatter;
